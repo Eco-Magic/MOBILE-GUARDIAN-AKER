@@ -51,10 +51,25 @@ def honey_trap_activation(input_tentato):
         print(" THREAT NEUTRALIZED - SORCI VERDI MODE")
     else:
         print("Accesso negato. Riprova.")
-
 # Simulazione: Il truffatore prova a usare l'esca
 honey_trap_activation("admin123")
-Usa il codice con cautela.
+Usa il codice con cautela.pitone
+check_mobile_security.py
+
+"BLACK PANTHER PROTOCOL" o "SHADOW DEFENSE"
+# --- PROTOCOLLO PANTERA NERA (BLACK PANTHER) ---
+def ruggito_pantera():
+    print("      |\      _,,,---,,_")
+    print("ZZZzz /,`.-'`'    -.  ;-;;,_")
+    print("     |,4-  ) )-,_. ,\ (  `'-'")
+    print("    '---''(_/--'  `-'\_)   BLACK PANTHER ACTIVE")
+    print("---------------------------------------")
+    print(" STATUS: SHADOW DEFENSE ENABLED")
+    print("NO ACCESS FOR TRAPPERS")
+    print("---------------------------------------")
+
+# Attivazione finale: il gattino è diventato una pantera
+ruggito_pantera()
                         
 ---
 *"La forza del Guerrero è nel sangue e nel codice. / Blood, Code, and Honor."*
