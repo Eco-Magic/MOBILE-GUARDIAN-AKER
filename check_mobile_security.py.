@@ -32,5 +32,12 @@ def check_device_anomalies(logs_chiamate, app_installate):
 # Test di simulazione attacco subito
 test_logs = ["call_to_800303303_redirected", "normal_call_out"]
 test_apps = ["WhatsApp", "Instagram", "Fake-Dialer-Pro"]
+pitone
+# --- REGOLA DEL TEMPO (RATE LIMIT) ---
+import time
+print(" Sistema di controllo velocità attivo.")
+time.sleep(2) # Il sistema aspetta 2 secondi prima di rispondere
+Usa il codice con cautela.
+
 
 check_device_anomalies(test_logs, test_apps)
