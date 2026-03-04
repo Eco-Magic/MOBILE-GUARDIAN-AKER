@@ -37,6 +37,24 @@ def verifica_codice_accesso(codice_digitato):
 # Esempio di attivazione trappola
 verifica_codice_accesso("1234")
 Usa il codice con cautela.
+
+pitone
+# --- HONEY-TRAP PROTOCOL (TRAF_MIELE_AKER) ---
+def honey_trap_activation(input_tentato):
+    # Questa è l'esca: se provano a usare questa password, scatta la Pantera
+    esca_miele = "admin123"
+    
+    if input_tentato == esca_miele:
+        print(" HONEY-TRAP: Esca mangiata dal truffatore!")
+        print(" BLACK PANTHER: ATTACCO INDIVIDUATO")
+        print(" STATUS: LOCKDOWN TOTALE ATTIVATO")
+        print(" THREAT NEUTRALIZED - SORCI VERDI MODE")
+    else:
+        print("Accesso negato. Riprova.")
+
+# Simulazione: Il truffatore prova a usare l'esca
+honey_trap_activation("admin123")
+Usa il codice con cautela.
                         
 ---
 *"La forza del Guerrero è nel sangue e nel codice. / Blood, Code, and Honor."*
