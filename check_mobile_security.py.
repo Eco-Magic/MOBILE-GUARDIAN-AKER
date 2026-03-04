@@ -1,0 +1,36 @@
+# ---------------------------------------------------------
+#  MOBILE-GUARDIAN-AKER v1.0 
+#  Diagnostica Sicurezza Smartphone (iOS/Android)
+#  Protocollo Anti-Bolla Digitale | El Guerrero Aker
+# ---------------------------------------------------------
+
+def check_device_anomalies(logs_chiamate, app_installate):
+    punteggio_rischio = 0
+    processi_sospetti = ["call-divert", "fake-dialer", "remote-access-t"]
+    
+    print(" Avvio scansione Soldato Aker sul dispositivo...")
+
+    # 1. Analisi Chiamate Deviate (Malware FakeCall)
+    for log in logs_chiamate:
+        if "redirect" in log or "intercept" in log:
+            punteggio_rischio += 50
+            print(" ALLERTA: Rilevata intercettazione chiamate attiva!")
+
+    # 2. Analisi App Sospette (Hijacking)
+    for app in app_installate:
+        if any(p in app.lower() for p in processi_sospetti):
+            punteggio_rischio += 40
+            print(f" ALLERTA: Rilevato processo malevolo: {app}")
+
+    print("-" * 40)
+    if punteggio_rischio >= 70:
+        print(f" STATO: DISPOSITIVO COMPROMESSO ({punteggio_rischio}%)")
+        print(" CONSIGLIO: Formattazione immediata e cambio password iCloud/Google.")
+    else:
+        print(f" STATO: DISPOSITIVO SICURO ({punteggio_rischio}%)")
+
+# Test di simulazione attacco subito
+test_logs = ["call_to_800303303_redirected", "normal_call_out"]
+test_apps = ["WhatsApp", "Instagram", "Fake-Dialer-Pro"]
+
+check_device_anomalies(test_logs, test_apps)
